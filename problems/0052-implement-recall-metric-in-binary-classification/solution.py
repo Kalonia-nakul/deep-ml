@@ -11,7 +11,3 @@ def recall(y_true, y_pred):
     if denominator == 0:
         return 0.0  # no positives in y_true, avoid division by zero
     return float(tp / denominator)
-
-y_true = np.array([1, 0, 1, 1, 0, 1])
-y_pred = np.array([1, 0, 1, 0, 0, 1])
-print(recall(y_true, y_pred))  # 0.75
